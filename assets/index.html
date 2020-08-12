@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="blogg.css">
+</head>
+
+<body>
+    <h1>CMS</h1>
+    <hr>
+    <div id="id-blogs"></div>
+
+    <script src="handlebars.js"></script>
+    <script src="blogg.js"></script>
+
+    <script id="id-blogs-template" type="text/x-handlebars-template">
+        {{#if blogs}}
+        <h2>Summary of {{blogs.length}} posts:</h2>
+        <ol>
+            {{#each blogs}}
+            <li>{{title}}</li>
+            {{/each}}
+        </ol>
+        <hr>
+        <h2>Posts:</h2>
+        {{#each blogs}}
+        <div class="blog">
+            <div class="blog-date">{{date}}</div>
+            <div class="blog-title">{{title}}</div>
+            <hr> {{#each content}}
+            <p class="blog-content">{{this}}</p>
+            {{/each}}
+        </div>
+        {{/each}} {{^}}
+        <p>Loading...</p>
+        {{/if}}
+    </script>
+
+</body>
+
+</html>

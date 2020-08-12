@@ -1,0 +1,8 @@
+{
+    "title": "Simple CMS",
+    "date": "2020.01.01",
+    "content": [
+        "This simple lightweight CMS is based on posts described by JSON files.",
+        "Each JSON file is rendered by means of handelbars HTML templates.\nThis makes it easy to maintain."
+    ]
+}

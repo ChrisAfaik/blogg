@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blog {
+    background-color: #f8f8f8;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: cadetblue;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.blog-title {
+    color: darkslategray;
+    font-size: larger;
+    font-weight: bold;
+    display: inline;
+}
+
+.blog-content {
+    color: darkslategray;
+}
+
+.blog-date {
+    font-size: x-small;
+    color: darkslategray;
+    display: inline;
+    /* position: absolute;
+    right: 50%; */
+}
